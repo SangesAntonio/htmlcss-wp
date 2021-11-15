@@ -2,17 +2,23 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a{
     text-decoration: none;
     color: gray;
-
 }
 
 .container{
     width: 60%;
     margin: 0 auto;
+}
+
+.clearfix::after{
+    display: table;
+    clear: both;
+    content: "";
 }
 /*logo e nav buttons*/
 .logo-nav{
@@ -39,8 +45,7 @@ nav .button-nav{
 .first-box{
     min-width: 100%;
     height: 530px;
-    border-radius: 15px;
-    
+    margin-bottom: 30px;
 }
 
 .first-banner{
@@ -51,7 +56,7 @@ nav .button-nav{
     overflow: hidden;
     margin-bottom: 20px;
     object-fit: cover;
-    
+    border-radius: 15px;
 }
 
 .banner-text{
@@ -63,55 +68,51 @@ nav .button-nav{
 }
 
 .first-box h2{
-    
-
 }
 
-.first-box p{    
-  
-   
+.first-box p{      
 }
-}
+
 
     
- /*seconda parte del main*/
+ /* header seconda parte del main*/
+.header-second{
+    width: 100%;  
+    margin-bottom: 20px; 
+}
+
+.header-second h5{
+    font-weight: lighter;
+    color: grey;
+}
+/*colonne seconda parte main*/
 .second-box{
     width: 100%;
-    background-color: rgb(10, 146, 146);
-    
     padding: 10px 0;
-}
-.clearfix::after{
-    display: table;
-    clear: both;
-    content: "";
+
 }
 
-
-.header-second{
-    width: 100%;
-    height: 80px;
-    margin-bottom: px;
-    background-color: rgb(53, 97, 240);
+.col.side img{
+    max-width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
 }
-
-.box{
-    background-color: rgb(53,97,240);
-    height: 400px;
+.col{
+    
     float: left;
 }
 
-.center-second{
+.center-side{
     width: calc(50% - 40px);
     margin: 0 20px;
 }
 
-.left-second{
+.left-side.right-side{
     width: 25%;
 }
 
-.right-second{
-    width: 25%;
+
 }
 /*footer*/
 .bottom{
