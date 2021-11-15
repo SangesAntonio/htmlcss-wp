@@ -1,3 +1,4 @@
+/*general*/
 *{
     margin: 0;
     box-sizing: border-box;
@@ -5,7 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-a{
+li a{
     text-decoration: none;
     color: gray;
 }
@@ -33,14 +34,14 @@ a{
     max-height: 200px;
     background-color: rgb(49, 35, 49);
     border-radius: 15px;
-
 }
 
-.second-box.clearfix::after{
+.clearfix::after{
     display: table;
     clear: both;
     content:'';
 }
+
 /*logo e nav buttons*/
 .logo-nav{
     width: 100%;
@@ -51,6 +52,7 @@ a{
     width: auto;
     height: 70px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 nav ul{
@@ -69,7 +71,7 @@ nav .button-nav{
     margin-bottom: 30px;
 }
 
-.first-banner{
+.img-banner{
     width: auto;
     height: auto;
     min-width: 100%;
@@ -79,6 +81,7 @@ nav .button-nav{
     object-fit: cover;
     border-radius: 15px;
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .banner-text{
@@ -89,13 +92,10 @@ nav .button-nav{
     color: white;
 }
 
-.first-box h2{
+.banner-text h2{
+    font-weight: normal;
+
 }
-
-.first-box p{      
-}
-
-
     
  /* header seconda parte del main*/
 .header-second{
@@ -112,10 +112,9 @@ nav .button-nav{
 .second-box{
     width: 100%;
     padding: 10px 0;
-
 }
 
-.left-img{
+.opacity-main > img{
     width: 100%;
     height: auto;
     min-width: 100%;
@@ -125,43 +124,16 @@ nav .button-nav{
     object-fit: cover;
     border-radius: 15px;
     opacity: 0.8;
+    cursor: pointer;
 }
 
-.right-img{
-    width: 100%;
-    height: auto;
-    min-width: 100%;
-    max-height: 200px;
-    overflow: hidden;
-    margin-bottom: 20px;
-    object-fit: cover;
-    border-radius: 15px;
-    opacity: 0.8
-}
-
-.center-img{
-    width: 100%;
-    height: auto;
-    min-width: 100%;
-    max-height: 200px;
-    overflow: hidden;
-    margin-bottom: 20px;
-    object-fit: cover;
-    border-radius: 15px;
-    opacity: 0.8
-}
 
 .left-side{
-    width: 25%;
-    
-    opacity: (0.8);
-    
+    width: 25%;   
 }
 
 .right-side{
-    width: 25%;
-    
-    opacity: (0.8);
+    width: 25%;   
 }
 
 .col{
@@ -172,12 +144,13 @@ nav .button-nav{
 
 .center-side{
     width: 50%;
-    padding: 0 10px;
-    opacity: (0.8);
+    padding: 0 10px;    
 }
 
 .second-box h3{   
+    color: rgb(66, 66, 66);
     font-weight: normal;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
@@ -186,8 +159,6 @@ nav .button-nav{
     color: gray;
 }
 
-
-
 /*footer*/
 .bottom{
     width: 100%;
@@ -195,12 +166,10 @@ nav .button-nav{
     font-weight: lighter;
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
 
 .bottom-text::after{
     content: "\2665";
     color: red;
     font-weight: bold;
-
 }
