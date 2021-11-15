@@ -11,10 +11,10 @@ a{
 }
 
 .container{
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
-/*header*/
+/*logo e nav buttons*/
 .logo-nav{
     width: 100%;
     margin-bottom: 20px;
@@ -36,14 +36,45 @@ nav .button-nav{
 }
 
 /*prima parte del main*/
-
 .first-box{
-    width: 100%;
-    height: 500px;
-    background-color: rgb(240, 216, 4);
-    margin-bottom: 20px;
+    min-width: 100%;
+    height: 530px;
+    border-radius: 15px;
+    
 }
 
+.first-banner{
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    max-height: 530px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    object-fit: cover;
+    
+}
+
+.banner-text{
+    padding-left: 30px;
+    width: 50%;
+    position: relative;
+    bottom: 200px;
+    color: white;
+}
+
+.first-box h2{
+    
+
+}
+
+.first-box p{    
+  
+   
+}
+}
+
+    
+ /*seconda parte del main*/
 .second-box{
     width: 100%;
     background-color: rgb(10, 146, 146);
